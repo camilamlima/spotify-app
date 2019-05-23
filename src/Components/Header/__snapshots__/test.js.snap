@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar componente de Header da aplicação 1`] = `
+<header
+  className="navbar navbar-dark navbar-fixed-top"
+  role="banner"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="navbar-header"
+    >
+      <a
+        href="#"
+      >
+        <span
+          className="navbar-logo"
+        >
+          Spotify
+        </span>
+      </a>
+    </div>
+    <nav
+      className="collapse navbar-collapse"
+      id="navbar-nav"
+      role="navigation"
+    >
+      <ul
+        className="nav navbar-nav navbar-right nav-main"
+      >
+        <li
+          className="hidden"
+        >
+          <a
+            href="#"
+            id="nav-link-Explore"
+          >
+            Explore
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            id="nav-link-premium"
+          >
+            Premium
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            id="nav-link-help"
+          >
+            Ajuda
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            id="nav-link-download"
+          >
+            Baixar
+          </a>
+        </li>
+        <li
+          className="divider"
+          role="separator"
+        />
+        <li>
+          <a
+            href="#"
+            id="nav-link-sign-up"
+          >
+            Inscrever-se
+          </a>
+        </li>
+        <li>
+          <button
+            className="header-login-link"
+            onClick={[Function]}
+          >
+            Entrar
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;

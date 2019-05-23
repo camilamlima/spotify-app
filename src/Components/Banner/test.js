@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import renderer from 'react-test-renderer';
 
-import App from './App';
+import Banner from '.';
 
-test('Testar componente de App da aplicação', () => {
+test('Testar componente de Banner da aplicação', () => {
 
     const component = renderer.create(
       <BrowserRouter>
-        <App />
+        <Banner />
       </BrowserRouter>
     );
 

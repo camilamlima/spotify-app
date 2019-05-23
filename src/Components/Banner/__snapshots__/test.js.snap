@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar componente de Banner da aplicação 1`] = `
+<div
+  className="jumbotron jumbotron-devices background"
+>
+  <div
+    className="hero-home-bg-cover"
+  />
+  <div
+    className="container simplified"
+  >
+    <div
+      className="row center-text"
+    >
+      <h1>
+        Música para todos.
+      </h1>
+      <h4>
+        Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.
+      </h4>
+      <a
+        className="btn btn-green"
+        href="#"
+      >
+        OBTENHA O SPOTIFY FREE
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import { Link } from 'react-router-dom'
 
 import './card.css'
 
@@ -8,11 +7,12 @@ class Card extends Component {
     render(){
       return(
         <div className="card">
-          <img className="card-img-top" src="https://placeimg.com/286/180/animals" alt="Card image cap" />
+          <div className="warp-img">
+            <img className="card-img-top" src={this.props.artista.image} alt={this.props.artista.name} />
+          </div>
           <div className="card-body">
             <h5 className="card-title">{this.props.artista.name}</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Playlist</a>
+            <a href={this.props.artista.href} className="btn btn-green" target="blank">Playlist</a>
           </div>
         </div>
       );

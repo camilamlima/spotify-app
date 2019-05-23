@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar componente de Artistas da aplicação 1`] = `
+<div
+  className="jumbotron jumbotron-devices"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    />
+  </div>
+</div>
+`;

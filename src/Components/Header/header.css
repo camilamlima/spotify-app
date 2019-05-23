@@ -54,11 +54,3 @@
     background: none;
     border: none;
 }
-
-body{
-    background: linear-gradient(50deg, #cd5c5c 0, #ed8f42 100%);
-}
-
-.jumbotron {
-    background: none;
-}

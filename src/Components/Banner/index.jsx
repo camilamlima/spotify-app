@@ -1,34 +1,21 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
-import img_banner from "./hero-burst.svg";
+import './banner.css';
 
 class Banner extends Component {
   render() {
     return (
-       <div className="jumbotron jumbotron-devices">
-            <div className="container">
-              <div>
-                <h2>
-                  <span className="text-white">
-                    Música para todos!
-                  </span>
-                </h2>
-              </div>
-              <img className="center-block" src={img_banner} />
-              <ul className="device-list text-white">
-                <li>Mobile</li>
-                <li>Computer</li>
-                <li>Tablet</li>
-                <li>Car</li>
-              </ul>
-              <ul className="device-list text-white">
-                <li>Speaker</li>
-                <li><a href="#">PlayStation®</a></li>
-                <li>TV</li>
-                <li><a href="#">Web Player</a></li>
-              </ul>
+       <div className="jumbotron jumbotron-devices background">
+          <div className="hero-home-bg-cover"></div>  
+          <div className="container simplified">
+            <div className="row center-text">
+              <h1>Música para todos.</h1>
+              <h4>Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.</h4>
+              <a href="#" className="btn btn-green">
+                OBTENHA O SPOTIFY FREE
+              </a>
             </div>
+          </div>
       </div>
       )
   }

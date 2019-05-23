@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar componente de Card da aplicação 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="warp-img"
+  >
+    <img
+      alt="Alcymar Monteiro"
+      className="card-img-top"
+      src="https://i.scdn.co/image/1d0ccd0c4b5ec14c2c4575fd11f365883c971b0b"
+    />
+  </div>
+  <div
+    className="card-body"
+  >
+    <h5
+      className="card-title"
+    >
+      Alcymar Monteiro
+    </h5>
+    <a
+      className="btn btn-green"
+      href="https://open.spotify.com/artist/0TcVnvKse98awlZxtUKIOk"
+      target="blank"
+    >
+      Playlist
+    </a>
+  </div>
+</div>
+`;

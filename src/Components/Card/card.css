@@ -1,0 +1,14 @@
+.btn-green{
+    margin-bottom: 40px;
+    background-color: #1DB954;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+.warp-img{
+    height: 240px;
+    overflow: hidden;
+}
+.card-img-top{
+    width: 100%;
+}

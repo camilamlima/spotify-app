@@ -1,14 +1,6 @@
 import React, {Component} from 'react'
-import { Link } from 'react-router-dom'
-
 import Card from '../Card';
-import alcymar from './alcymar.jpg'
-import lella from './lella.jpg'
-import ney from './ney.jpg'
-
 import Spotify from 'spotify-web-api-js';
-
-import './artistas.css'
 
 class Artistas extends Component{
     
@@ -19,33 +11,42 @@ class Artistas extends Component{
         this.spotifyApi.setAccessToken(localStorage.getItem("token"));
         
         this.state = {
-          artistas: [
-              {
-                  name: "Alcymar Monteiro"
-              },
-              {
-                  name: "Leela"
-              },
-              {
-                  name: "Ney Alves"
-                  
-              }
-              ],
+          artistas: []
         };
+     }
+     componentDidMount (){
+       this.search();
      }
   
     search(){
-        console.log("tetete")
-        this.spotifyApi.searchArtists('Love')
-          .then(function(data) {
-            console.log('Search artists by "Love"', data);
-          }, function(err) {
-            console.error(err);
-          });
+        console.log("Buscando na API")
+        let artistas = ["Alcymar Monteiro", "Leela", "Ney Alves"]
+        artistas.map((artista) => {
+          this.spotifyApi.searchArtists(artista)
+            .then(function(data) {
+              
+              let item = data.artists.items[0];
+              let s_artistas = this.state.artistas;
+              
+              s_artistas.push({
+                  name: item.name,
+                  href: item.external_urls.spotify,
+                  image: item.images[0].url
+              })
+              
+              this.setState({artistas: s_artistas})
+              console.log(item);
+            }.bind(this), function(err) {
+              console.error(err);
+            });
+          
+          
+          
+        });
+        
     }
   
     render(){
-        this.search.bind(this)()
         return(
           <div className="jumbotron jumbotron-devices">
         

@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import { Link } from 'react-router-dom'
 import SpotifyLogin from 'react-spotify-login';
 
 import './header.css'
@@ -71,9 +70,4 @@ class Header extends Component {
     }
 }    
 
-
 export default Header;
-
-
-
-
